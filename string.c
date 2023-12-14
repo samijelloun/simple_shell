@@ -66,12 +66,16 @@ char *_strdup(char *str)
 	}
 	return (ptr);
 }
+
+
 /**
  * char *_strcpy - a function that copies the string pointed to by src
  * @dest: copy to
  * @src: copy from
  * Return: string
  */
+
+/*
 char *_strcpy(char *dest, char *src)
 {
 	int l = 0;
@@ -90,6 +94,22 @@ char *_strcpy(char *dest, char *src)
 	dest[l] = '\0';
 	return (addest);
 }
+*/
+
+char *_strcpy(char *heaven, char *hell)
+{
+	int index;
+
+	index = 0;
+	while (hell[index] != '\0')
+	{
+		*(heaven + index) = *(hell + index);
+	index++;
+	}
+	*(heaven + index) = '\0';
+	return (heaven);
+}
+
 /**
   * _strchr - main function
   *
