@@ -87,6 +87,8 @@ void executeCommand(char **tokens, char **env)
 		wait(&status);
 		free(path);
 		free(pathCopy);
+		free(fullPath);
 		status >>= 8;
 	}
+
 }
