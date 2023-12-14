@@ -2,3 +2,4 @@ SIMPLE_SHELL_TEST_SUITE
 TEST_SUITE
 hsh
 allowed_functions
+vgcore.*
