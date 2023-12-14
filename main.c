@@ -37,6 +37,10 @@ int main(__attribute__((unused)) int ac, __attribute__((unused)) char **av, char
 			exit_shell();
 		}
 
+                if (tokens[0] == NULL)
+                {
+                        continue;
+                }
 		executeCommand(tokens, env);
 	}
 	free(input);
